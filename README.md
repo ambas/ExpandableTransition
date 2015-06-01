@@ -1,4 +1,4 @@
-# ExpanableViewTransition
+# ExpandableViewTransition
 ![](https://github.com/ambas/ExpanableTransition/blob/master/Demo/sample.gif?raw=true)
 
 ##Features
