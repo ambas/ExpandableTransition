@@ -1,5 +1,5 @@
 # ExpanableViewTransition
-![](https://github.com/taskworld/ExpanableTransition/blob/master/Demo/sample.gif?raw=true)
+![](https://github.com/ambas/ExpanableTransition/blob/master/Demo/sample.gif?raw=true)
 
 ##Features
 
