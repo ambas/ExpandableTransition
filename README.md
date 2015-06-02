@@ -1,7 +1,7 @@
 # ExpandableViewTransition
 ![](https://github.com/ambas/ExpanableTransition/blob/master/Demo/sample.gif?raw=true)
 
-## To do.
+## To Do
 
 - [x] Push from collection view to view controller like cell expanded
 - [x] Provide delegate for each transition state
