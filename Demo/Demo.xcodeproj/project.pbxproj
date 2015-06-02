@@ -13,6 +13,7 @@
 		F5217F5A1A89F25500A3D0ED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5217F591A89F25500A3D0ED /* Images.xcassets */; };
 		F5217F5D1A89F25500A3D0ED /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5217F5B1A89F25500A3D0ED /* LaunchScreen.xib */; };
 		F5217F691A89F25500A3D0ED /* DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5217F681A89F25500A3D0ED /* DemoTests.swift */; };
+		F595E47E1B1E064F00DC7CC0 /* ExpandableViewTransition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F595E47D1B1E064F00DC7CC0 /* ExpandableViewTransition.framework */; };
 		F5CD1F691A8A029200F6C1C4 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CD1F671A8A029200F6C1C4 /* MovieCell.swift */; };
 		F5CD1F6A1A8A029200F6C1C4 /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5CD1F681A8A029200F6C1C4 /* MovieCell.xib */; };
 		F5CD1F7E1A8A18D400F6C1C4 /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CD1F7D1A8A18D400F6C1C4 /* MovieDetail.swift */; };
@@ -53,6 +54,7 @@
 		F5217F621A89F25500A3D0ED /* DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5217F671A89F25500A3D0ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5217F681A89F25500A3D0ED /* DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTests.swift; sourceTree = "<group>"; };
+		F595E47D1B1E064F00DC7CC0 /* ExpandableViewTransition.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExpandableViewTransition.framework; path = "../build/Debug-iphoneos/ExpandableViewTransition.framework"; sourceTree = "<group>"; };
 		F5CD1F671A8A029200F6C1C4 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		F5CD1F681A8A029200F6C1C4 /* MovieCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
 		F5CD1F7D1A8A18D400F6C1C4 /* MovieDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F595E47E1B1E064F00DC7CC0 /* ExpandableViewTransition.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +83,7 @@
 		F5217F441A89F25500A3D0ED = {
 			isa = PBXGroup;
 			children = (
+				F595E47D1B1E064F00DC7CC0 /* ExpandableViewTransition.framework */,
 				F5217F4F1A89F25500A3D0ED /* Demo */,
 				F5217F651A89F25500A3D0ED /* DemoTests */,
 				F5217F4E1A89F25500A3D0ED /* Products */,
@@ -371,6 +375,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/ExpanableViewTransition-dbppedtocxzbwgdzxhbqzaqbauud/Build/Products/Debug-iphoneos",
+					"/Users/ambaschobsanti/Desktop/AM/ExpandableTransition/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -385,6 +390,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/ExpanableViewTransition-dbppedtocxzbwgdzxhbqzaqbauud/Build/Products/Debug-iphoneos",
+					"/Users/ambaschobsanti/Desktop/AM/ExpandableTransition/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
