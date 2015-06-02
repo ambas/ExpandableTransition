@@ -1,12 +1,15 @@
 # ExpandableViewTransition
 ![](https://github.com/ambas/ExpanableTransition/blob/master/Demo/sample.gif?raw=true)
 
-##Features
+## To do.
 
 - [x] Push from collection view to view controller like cell expanded
 - [x] Provide delegate for each transition state
 - [x] Show or hide expanded view
+- [ ] Install with Carthage.
+- [ ] Install with Cocoapods
 - [ ] Custom transition
+
 
 ##Installation
 
