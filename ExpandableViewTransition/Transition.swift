@@ -1,9 +1,9 @@
 //
-//  CETransition.swift
+//  Transition.swift
 //  Taskworld
 //
 //  Created by Ambas Chobsanti on 2/3/15.
-//  Copyright (c) 2015 Taskworld. All rights reserved.
+//  Copyright (c) 2015 Ambas. All rights reserved.
 //
 
 import UIKit
@@ -17,7 +17,7 @@ let navigationHeight : CGFloat = 44.0
 let statubarHeight : CGFloat = 20.0
 let navigationHeaderAndStatusbarHeight : CGFloat = navigationHeight + statubarHeight
 
-public class CETransition: NSObject, UIViewControllerAnimatedTransitioning {
+public class Transition: NSObject, UIViewControllerAnimatedTransitioning {
     
     let isPresenting: Bool
     let isHideExpandedView: Bool
@@ -49,13 +49,13 @@ public class CETransition: NSObject, UIViewControllerAnimatedTransitioning {
     public func expandCard(fromViewController: UIViewController, toViewController: UIViewController, containerView: UIView, completion:() -> ()) {
         toViewController.view.hidden = true
         containerView.addSubview(toViewController.view)
-        let viewToExpand = (fromViewController as! CEBaseViewControllerProtocol).viewToExpand()
+        let viewToExpand = (fromViewController as! BaseViewControllerProtocol).viewToExpand()
         let snapShot = viewToExpand.snapShotForTransition()
         containerView.insertSubview(snapShot, belowSubview: toViewController.view)
         let leftUpperPoint = (viewToExpand as! UIView).convertPoint(CGPointZero, toView: nil)
         snapShot.origin(leftUpperPoint)
         
-        (toViewController as? CEDestinationViewControllerProtocol)?.snapShotWillTransition?(snapShot)
+        (toViewController as? DestinationViewControllerProtocol)?.snapShotWillTransition?(snapShot)
         
         UIView.expandAnimation(leftUpperPoint, snapShot: snapShot, fromViewController: fromViewController, toViewController: toViewController, completion: {
             if self.isHideExpandedView {
@@ -68,7 +68,7 @@ public class CETransition: NSObject, UIViewControllerAnimatedTransitioning {
     public func hideCard(fromViewController: UIViewController, toViewController: UIViewController, containerView: UIView, completion:() -> ()) {
         let toView = toViewController.view
         containerView.addSubview(toView)
-        let viewToExpand = (toViewController as! CEBaseViewControllerProtocol).viewToExpand()
+        let viewToExpand = (toViewController as! BaseViewControllerProtocol).viewToExpand()
         (viewToExpand as! UIView).hidden = true
         let leftUpperPoint = (viewToExpand as! UIView).convertPoint(CGPointZero, toView: nil)
         let offsetY = fromViewController.navigationController!.navigationBarHidden ? 0.0 : navigationHeaderAndStatusbarHeight
@@ -76,7 +76,7 @@ public class CETransition: NSObject, UIViewControllerAnimatedTransitioning {
         snapShot.origin(CGPoint(x: 0, y: offsetY))
         snapShot.frame.size.height = screenHeight
         containerView.addSubview(snapShot)
-        (fromViewController as? CEDestinationViewControllerProtocol)?.snapShotWillFold?(snapShot)
+        (fromViewController as? DestinationViewControllerProtocol)?.snapShotWillFold?(snapShot)
         
         UIView.foldAnimation(leftUpperPoint, snapShot: snapShot, fromViewController: fromViewController, viewToExpand: viewToExpand, completion: {
             completion()

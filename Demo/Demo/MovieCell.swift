@@ -20,7 +20,7 @@ class MovieCell: UICollectionViewCell {
     }
 }
 
-extension MovieCell: CESnapShotViewProtocol {
+extension MovieCell: SnapShotViewProtocol {
     
     func snapShotForTransition() -> UIView {
         let snapShotCell = UINib(nibName: MovieNibName, bundle: nil).instantiateWithOwner(self, options: nil).first as! MovieCell

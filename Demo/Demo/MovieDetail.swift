@@ -24,7 +24,7 @@ class MovieDetail: UITableViewController {
     }
 }
 
-extension MovieDetail: CEDestinationViewControllerProtocol {
+extension MovieDetail: DestinationViewControllerProtocol {
 
     func snapShotWillTransition(snapShot: UIView) {
         println("will transition")

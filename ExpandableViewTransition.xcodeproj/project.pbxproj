@@ -10,10 +10,10 @@
 		F5217F2C1A89F14000A3D0ED /* ExpandableViewTransition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5217F201A89F14000A3D0ED /* ExpandableViewTransition.framework */; };
 		F5217F331A89F14000A3D0ED /* ExpandableViewTransitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5217F321A89F14000A3D0ED /* ExpandableViewTransitionTests.swift */; };
 		F5CD1F701A8A0A1100F6C1C4 /* ExpandableViewTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = F5CD1F6F1A8A0A1100F6C1C4 /* ExpandableViewTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F5CD1F791A8A11C900F6C1C4 /* CENavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CD1F751A8A11C900F6C1C4 /* CENavigationControllerDelegate.swift */; };
-		F5CD1F7A1A8A11C900F6C1C4 /* CETransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CD1F761A8A11C900F6C1C4 /* CETransition.swift */; };
-		F5CD1F7B1A8A11C900F6C1C4 /* CETransitionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CD1F771A8A11C900F6C1C4 /* CETransitionProtocol.swift */; };
-		F5F28FDA1A8B53D2000DA3DA /* UIView+CEExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F28FD91A8B53D2000DA3DA /* UIView+CEExtension.swift */; };
+		F5CD1F791A8A11C900F6C1C4 /* NavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CD1F751A8A11C900F6C1C4 /* NavigationControllerDelegate.swift */; };
+		F5CD1F7A1A8A11C900F6C1C4 /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CD1F761A8A11C900F6C1C4 /* Transition.swift */; };
+		F5CD1F7B1A8A11C900F6C1C4 /* TransitionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CD1F771A8A11C900F6C1C4 /* TransitionProtocol.swift */; };
+		F5F28FDA1A8B53D2000DA3DA /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F28FD91A8B53D2000DA3DA /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,10 +33,10 @@
 		F5217F311A89F14000A3D0ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5217F321A89F14000A3D0ED /* ExpandableViewTransitionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableViewTransitionTests.swift; sourceTree = "<group>"; };
 		F5CD1F6F1A8A0A1100F6C1C4 /* ExpandableViewTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandableViewTransition.h; sourceTree = "<group>"; };
-		F5CD1F751A8A11C900F6C1C4 /* CENavigationControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CENavigationControllerDelegate.swift; sourceTree = "<group>"; };
-		F5CD1F761A8A11C900F6C1C4 /* CETransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CETransition.swift; sourceTree = "<group>"; };
-		F5CD1F771A8A11C900F6C1C4 /* CETransitionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CETransitionProtocol.swift; sourceTree = "<group>"; };
-		F5F28FD91A8B53D2000DA3DA /* UIView+CEExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+CEExtension.swift"; sourceTree = "<group>"; };
+		F5CD1F751A8A11C900F6C1C4 /* NavigationControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerDelegate.swift; sourceTree = "<group>"; };
+		F5CD1F761A8A11C900F6C1C4 /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		F5CD1F771A8A11C900F6C1C4 /* TransitionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionProtocol.swift; sourceTree = "<group>"; };
+		F5F28FD91A8B53D2000DA3DA /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +79,10 @@
 		F5217F221A89F14000A3D0ED /* ExpandableViewTransition */ = {
 			isa = PBXGroup;
 			children = (
-				F5F28FD91A8B53D2000DA3DA /* UIView+CEExtension.swift */,
-				F5CD1F751A8A11C900F6C1C4 /* CENavigationControllerDelegate.swift */,
-				F5CD1F761A8A11C900F6C1C4 /* CETransition.swift */,
-				F5CD1F771A8A11C900F6C1C4 /* CETransitionProtocol.swift */,
+				F5F28FD91A8B53D2000DA3DA /* UIView+Extension.swift */,
+				F5CD1F751A8A11C900F6C1C4 /* NavigationControllerDelegate.swift */,
+				F5CD1F761A8A11C900F6C1C4 /* Transition.swift */,
+				F5CD1F771A8A11C900F6C1C4 /* TransitionProtocol.swift */,
 				F5CD1F6F1A8A0A1100F6C1C4 /* ExpandableViewTransition.h */,
 				F5217F231A89F14000A3D0ED /* Supporting Files */,
 			);
@@ -221,10 +221,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5CD1F7B1A8A11C900F6C1C4 /* CETransitionProtocol.swift in Sources */,
-				F5F28FDA1A8B53D2000DA3DA /* UIView+CEExtension.swift in Sources */,
-				F5CD1F7A1A8A11C900F6C1C4 /* CETransition.swift in Sources */,
-				F5CD1F791A8A11C900F6C1C4 /* CENavigationControllerDelegate.swift in Sources */,
+				F5CD1F7B1A8A11C900F6C1C4 /* TransitionProtocol.swift in Sources */,
+				F5F28FDA1A8B53D2000DA3DA /* UIView+Extension.swift in Sources */,
+				F5CD1F7A1A8A11C900F6C1C4 /* Transition.swift in Sources */,
+				F5CD1F791A8A11C900F6C1C4 /* NavigationControllerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

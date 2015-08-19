@@ -11,7 +11,7 @@ import ExpandableViewTransition
 
 class ViewController: UICollectionViewController {
     
-    let holder = CENavigationControllerDelegate(isHideExpandedView: false)
+    let holder = NavigationControllerDelegate(isHideExpandedView: false)
     var indexPathSelected: NSIndexPath?
     
     override func viewDidLoad() {
@@ -58,13 +58,13 @@ extension ViewController: UICollectionViewDelegate {
     }
 }
 
-extension ViewController: CEBaseViewControllerProtocol {
+extension ViewController: BaseViewControllerProtocol {
     
     func transitionCollectionView() -> UICollectionView {
         return self.collectionView!
     }
     
-    func viewToExpand() -> CESnapShotViewProtocol {
+    func viewToExpand() -> SnapShotViewProtocol {
         var cell = self.collectionView?.cellForItemAtIndexPath(self.indexPathSelected!) as! MovieCell
         
         return cell

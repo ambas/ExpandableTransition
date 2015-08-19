@@ -7,5 +7,3 @@
 //
 
 #import <UIKit/UIKit.h>
-
-FOUNDATION_EXPORT double ExpandableViewTransition;
