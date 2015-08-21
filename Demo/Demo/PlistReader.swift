@@ -10,16 +10,30 @@ import UIKit
 
 class PlistReader {
     var fileName : String
-    var filePath
+    var filePath : String
     
     init(fileName : String) {
         self.fileName = fileName
-    }
-    
-    func arrayFromFile -> Array {
+        //TO-DO: check this.
+        self.filePath = NSBundle.mainBundle().pathForResource(fileName, ofType: "plist")!
         
     }
     
+    func arrayFromFile() -> [AnyObject] {
+        var arr = NSArray(contentsOfFile: self.filePath)!
+        if let swiftArray = arr as NSArray as? [AnyObject] {
+            return swiftArray
+        } else {
+            return []
+        }
+    }
     
-    
+    func dictionaryFromFile() -> [String : AnyObject] {
+        var dict = NSDictionary(contentsOfFile: self.filePath)!
+        if let swiftDictionary = dict as NSDictionary as? [String: AnyObject] {
+            return swiftDictionary
+        } else {
+            return [:]
+        }
+    }
 }
