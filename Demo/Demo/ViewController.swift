@@ -13,6 +13,7 @@ class ViewController: UICollectionViewController {
     
     let holder = NavigationControllerDelegate(isHideExpandedView: false)
     var indexPathSelected: NSIndexPath?
+    let dataSource = PlistReader(fileName: "MovieDB").arrayFromFile()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,12 +44,16 @@ class ViewController: UICollectionViewController {
 extension ViewController: UICollectionViewDelegate {
     
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return dataSource.count
     }
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         var cell = collectionView.dequeueReusableCellWithReuseIdentifier(MovieCellID, forIndexPath: indexPath) as! MovieCell
-        
+        let movieDict = dataSource[indexPath.row] as! [String: AnyObject]
+        let movieTitle = movieDict["movieTitle"] as! String
+        let posterPath = movieDict["posterPath"] as! String
+        cell.movieTitle.text = movieTitle
+        cell.posterImageView.image = UIImage(named: posterPath)
         return cell
     }
     

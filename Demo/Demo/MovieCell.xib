@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7515.2" systemVersion="14D72i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7512"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -40,6 +40,10 @@
                 <constraint firstItem="L86-kU-vbb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="ouW-f9-ZPr"/>
             </constraints>
             <size key="customSize" width="476" height="154"/>
+            <connections>
+                <outlet property="movieTitle" destination="1HK-8a-brk" id="716-6P-Pgb"/>
+                <outlet property="posterImageView" destination="L86-kU-vbb" id="qzG-Zf-tDe"/>
+            </connections>
             <point key="canvasLocation" x="777" y="616"/>
         </collectionViewCell>
     </objects>
