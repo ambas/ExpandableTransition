@@ -30,13 +30,12 @@ class ViewController: UICollectionViewController {
     func configureLayout() {
         let flowLayout = self.collectionView?.collectionViewLayout as! UICollectionViewFlowLayout
         let screenWidth = flowLayout.collectionView!.bounds.size.width
-        flowLayout.itemSize = CGSize(width: flowLayout.collectionView!.bounds.size.width, height: 154)
+        flowLayout.itemSize = CGSize(width: flowLayout.collectionView!.bounds.size.width, height: 165)
 
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let movieDetailViewController = segue.destinationViewController as! MovieDetail
-      movieDetailViewController.movieName = "Imitation Game"
     }
     
 }

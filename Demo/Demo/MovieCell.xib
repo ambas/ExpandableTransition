@@ -7,18 +7,11 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MovieCell" customModule="Demo" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="476" height="154"/>
+            <rect key="frame" x="0.0" y="0.0" width="476" height="165"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="476" height="154"/>
+                <rect key="frame" x="0.0" y="0.0" width="476" height="165"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="the_imitation_game_a_p.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="L86-kU-vbb">
-                        <rect key="frame" x="8" y="15" width="94" height="123"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="94" id="m2U-Lq-jIk"/>
-                            <constraint firstAttribute="height" constant="123" id="zX8-mI-HMB"/>
-                        </constraints>
-                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Imitation game" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1HK-8a-brk">
                         <rect key="frame" x="117" y="66" width="114" height="21"/>
                         <constraints>
@@ -29,6 +22,13 @@
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="the_imitation_game_a_p.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="L86-kU-vbb">
+                        <rect key="frame" x="8" y="10" width="94" height="145"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="94" id="m2U-Lq-jIk"/>
+                            <constraint firstAttribute="height" constant="145" id="zX8-mI-HMB"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
@@ -37,14 +37,14 @@
                 <constraint firstItem="1HK-8a-brk" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="66" id="C7R-XK-89D"/>
                 <constraint firstItem="1HK-8a-brk" firstAttribute="leading" secondItem="L86-kU-vbb" secondAttribute="trailing" constant="15" id="gi0-6f-5go"/>
                 <constraint firstItem="L86-kU-vbb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="nFQ-AC-F0Y"/>
-                <constraint firstItem="L86-kU-vbb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="ouW-f9-ZPr"/>
+                <constraint firstItem="L86-kU-vbb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="ouW-f9-ZPr"/>
             </constraints>
             <size key="customSize" width="476" height="154"/>
             <connections>
                 <outlet property="movieTitle" destination="1HK-8a-brk" id="716-6P-Pgb"/>
                 <outlet property="posterImageView" destination="L86-kU-vbb" id="qzG-Zf-tDe"/>
             </connections>
-            <point key="canvasLocation" x="777" y="616"/>
+            <point key="canvasLocation" x="777" y="615.5"/>
         </collectionViewCell>
     </objects>
     <resources>
