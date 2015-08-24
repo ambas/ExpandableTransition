@@ -35,7 +35,12 @@ class ViewController: UICollectionViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let cellSelected = sender as! MovieCell
+        let indexPath = collectionView?.indexPathForCell(cellSelected)
+        let movie = self.dataSource[indexPath!.row] as! [String : AnyObject]
         let movieDetailViewController = segue.destinationViewController as! MovieDetail
+        movieDetailViewController.movieName = movie["movieTitle"] as! String
+        movieDetailViewController.posterPath = movie["posterPath"] as! String
     }
     
 }
@@ -58,7 +63,8 @@ extension ViewController: UICollectionViewDelegate {
     
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         self.indexPathSelected = indexPath
-        self.performSegueWithIdentifier("movieDetail", sender: self)
+        let cell = collectionView.cellForItemAtIndexPath(indexPath)
+        self.performSegueWithIdentifier("movieDetail", sender: cell)
     }
 }
 
