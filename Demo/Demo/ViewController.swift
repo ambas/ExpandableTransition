@@ -39,8 +39,7 @@ class ViewController: UICollectionViewController {
         let indexPath = collectionView?.indexPathForCell(cellSelected)
         let movie = self.dataSource[indexPath!.row] as! [String : AnyObject]
         let movieDetailViewController = segue.destinationViewController as! MovieDetail
-        movieDetailViewController.movieName = movie["movieTitle"] as! String
-        movieDetailViewController.posterPath = movie["posterPath"] as! String
+        movieDetailViewController.movie = Movie(movieDict: movie)
     }
     
 }

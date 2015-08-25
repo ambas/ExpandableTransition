@@ -10,14 +10,12 @@ import UIKit
 import ExpandableViewTransition
 
 class MovieDetail: UITableViewController {
-    var movieName = ""
-    var posterPath = ""
+    var movie : Movie?
     weak var snapShot: UIView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.contentInset.top = 610
-        self.navigationItem.title = movieName
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -29,8 +27,10 @@ extension MovieDetail: DestinationViewControllerProtocol {
 
     func snapShotWillTransition(snapShot: UIView) {
         let cell = snapShot as! MovieCell
-        cell.movieTitle.text = movieName
-        cell.posterImageView.image = UIImage(named: posterPath)
+        cell.movieTitle.text = movie?.movieTitle
+        if let posterPath = movie?.photoPath {
+            cell.posterImageView.image = UIImage(named: posterPath)
+        }
         println("will transition")
     }
     
@@ -48,8 +48,10 @@ extension MovieDetail: DestinationViewControllerProtocol {
     
     func snapShotWillFold(snapShot: UIView) {
         let cell = snapShot as! MovieCell
-        cell.movieTitle.text = movieName
-        cell.posterImageView.image = UIImage(named: posterPath)
+        cell.movieTitle.text = movie?.movieTitle
+        if let posterPath = movie?.photoPath {
+            cell.posterImageView.image = UIImage(named: posterPath)
+        }
         UIView.animateWithDuration(0.3, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
             self.tableView.contentInset.top = 610
             }, completion: nil)
