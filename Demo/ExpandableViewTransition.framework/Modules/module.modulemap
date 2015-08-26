@@ -1,0 +1,10 @@
+framework module ExpandableViewTransition {
+  umbrella header "ExpandableViewTransition.h"
+
+  export *
+  module * { export * }
+}
+
+module ExpandableViewTransition.Swift {
+    header "ExpandableViewTransition-Swift.h"
+}

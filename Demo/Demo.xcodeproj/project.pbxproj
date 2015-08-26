@@ -59,6 +59,7 @@
 		A408146F1B8635AF00E89A18 /* MV5BMjM2NTQ5Mzc2M15BMl5BanBnXkFtZTgwNTcxMDI2NTE@._V1__SX1053_SY719_.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "MV5BMjM2NTQ5Mzc2M15BMl5BanBnXkFtZTgwNTcxMDI2NTE@._V1__SX1053_SY719_.jpg"; sourceTree = "<group>"; };
 		A40814721B8635DD00E89A18 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		A40814741B863D1600E89A18 /* MovieDB.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MovieDB.plist; sourceTree = "<group>"; };
+		A442FCD41B8E28FA00E1DFDE /* ExpandableViewTransition.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ExpandableViewTransition.framework; sourceTree = "<group>"; };
 		A4CEB0111B8777B6000DCFA0 /* PlistReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlistReader.swift; sourceTree = "<group>"; };
 		F5217F4D1A89F25500A3D0ED /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5217F511A89F25500A3D0ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -118,6 +119,7 @@
 		F5217F441A89F25500A3D0ED = {
 			isa = PBXGroup;
 			children = (
+				A442FCD41B8E28FA00E1DFDE /* ExpandableViewTransition.framework */,
 				F5217F4F1A89F25500A3D0ED /* Demo */,
 				F5217F651A89F25500A3D0ED /* DemoTests */,
 				F5217F4E1A89F25500A3D0ED /* Products */,
@@ -416,7 +418,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/ExpanableViewTransition-dnjncvyhkgvtesdayeiqqubzvyht/Build/Products/Debug-iphoneos",
+				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
@@ -430,7 +436,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/ExpanableViewTransition-dnjncvyhkgvtesdayeiqqubzvyht/Build/Products/Debug-iphoneos",
+				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;

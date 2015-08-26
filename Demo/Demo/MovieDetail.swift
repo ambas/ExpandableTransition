@@ -28,6 +28,11 @@ class MovieDetail: UITableViewController {
         super.viewDidAppear(animated)
     }
     
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+    }
+    
     func setupView() {
         ratingLabel.text = String(stringInterpolationSegment: movie!.rating)
         directorLabel.text = movie?.director
@@ -63,9 +68,18 @@ extension MovieDetail: DestinationViewControllerProtocol {
         if let posterPath = movie?.photoPath {
             cell.posterImageView.image = UIImage(named: posterPath)
         }
+        let ss = self.view.snapshotViewAfterScreenUpdates(true)
+        var newRect = ss.bounds
+        newRect.origin.y = -64
+        ss.frame = newRect
+        snapShot.addSubview(ss)
         UIView.animateWithDuration(0.3, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-            self.tableView.contentInset.top = 610
+            var newRect = ss.bounds
+            newRect.origin.y = 610
+            ss.frame = newRect
             }, completion: nil)
+        println("will folding")
+
     }
     
     func snapShotFoldind(snap Shot: UIView) {
