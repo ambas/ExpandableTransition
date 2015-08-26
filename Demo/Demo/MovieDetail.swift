@@ -13,13 +13,24 @@ class MovieDetail: UITableViewController {
     var movie : Movie?
     weak var snapShot: UIView?
     
+    @IBOutlet weak var ratingLabel: UILabel!
+    @IBOutlet weak var directorLabel: UILabel!
+    @IBOutlet weak var budgetLabel: UILabel!
+    @IBOutlet weak var studioLabel: UILabel!
+    @IBOutlet weak var overviewTextView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.contentInset.top = 610
+        setupView()
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
+    }
+    
+    func setupView() {
+        ratingLabel.text = String(stringInterpolationSegment: movie!.rating)
+        directorLabel.text = movie?.director
     }
 }
 
