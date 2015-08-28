@@ -117,7 +117,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Warner Brader" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3BW-2u-MG0">
-                                                    <rect key="frame" x="110" y="11" width="111" height="21"/>
+                                                    <rect key="frame" x="110" y="11" width="337" height="21"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -171,7 +171,7 @@
                         <outlet property="directorLabel" destination="Gnu-yA-X3C" id="3KV-58-B5P"/>
                         <outlet property="overviewTextView" destination="qVV-2B-SWX" id="UTx-9w-2nj"/>
                         <outlet property="ratingLabel" destination="vNr-kR-oNu" id="Pf5-t6-huf"/>
-                        <outlet property="studioLabel" destination="3BW-2u-MG0" id="Q7a-9L-g1M"/>
+                        <outlet property="studioLabel" destination="3BW-2u-MG0" id="5EG-7g-Elv"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tCe-of-SLp" userLabel="First Responder" sceneMemberID="firstResponder"/>

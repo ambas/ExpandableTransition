@@ -36,6 +36,9 @@ class MovieDetail: UITableViewController {
     func setupView() {
         ratingLabel.text = String(stringInterpolationSegment: movie!.rating)
         directorLabel.text = movie?.director
+        budgetLabel.text = movie?.budget
+        overviewTextView.text = movie?.overview
+        studioLabel.text = movie?.studio
     }
 }
 

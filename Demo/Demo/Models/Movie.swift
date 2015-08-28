@@ -16,6 +16,7 @@ struct Movie {
     var rating : Float
     var director : String
     var budget : String
+    var studio : String
     
     init(movieDict : [String : AnyObject]) {
         movieTitle = movieDict["movieTitle"] as! String
@@ -25,5 +26,6 @@ struct Movie {
         rating = movieDict["rating"] as! Float
         budget = movieDict["budget"] as! String
         director = movieDict["director"] as! String
+        studio = movieDict["studio"] as! String
     }
 }
