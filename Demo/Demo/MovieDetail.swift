@@ -39,6 +39,7 @@ class MovieDetail: UITableViewController {
         budgetLabel.text = movie?.budget
         overviewTextView.text = movie?.overview
         studioLabel.text = movie?.studio
+       
     }
 }
 
@@ -50,6 +51,7 @@ extension MovieDetail: DestinationViewControllerProtocol {
         if let posterPath = movie?.photoPath {
             cell.posterImageView.image = UIImage(named: posterPath)
         }
+        cell.tagline.text = movie?.tagline
         println("will transition")
     }
     
@@ -68,6 +70,7 @@ extension MovieDetail: DestinationViewControllerProtocol {
     func snapShotWillFold(snapShot: UIView) {
         let cell = snapShot as! MovieCell
         cell.movieTitle.text = movie?.movieTitle
+        cell.tagline.text = movie?.tagline
         if let posterPath = movie?.photoPath {
             cell.posterImageView.image = UIImage(named: posterPath)
         }
