@@ -55,7 +55,9 @@ extension ViewController: UICollectionViewDelegate {
         let movieDict = dataSource[indexPath.row] as! [String: AnyObject]
         let movieTitle = movieDict["movieTitle"] as! String
         let posterPath = movieDict["posterPath"] as! String
+        let tagline = movieDict["tagline"] as! String
         cell.movieTitle.text = movieTitle
+        cell.tagline.text = tagline
         cell.posterImageView.image = UIImage(named: posterPath)
         return cell
     }

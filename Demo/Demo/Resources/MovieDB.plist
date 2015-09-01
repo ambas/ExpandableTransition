@@ -26,7 +26,7 @@
 		<key>movieTitle</key>
 		<string>No Escape</string>
 		<key>tagline</key>
-		<string></string>
+		<string>No rescue. No refuge.</string>
 		<key>posterPath</key>
 		<string>MV5BMTQ4ODYxMTM0Nl5BMl5BanBnXkFtZTgwNTk0MzM1NjE@._V1__SX1053_SY719_.jpg</string>
 		<key>rating</key>
@@ -44,7 +44,7 @@
 		<key>movieTitle</key>
 		<string>Dark Place</string>
 		<key>tagline</key>
-		<string></string>
+		<string>-</string>
 		<key>posterPath</key>
 		<string>MV5BMTY1NTM4ODYzM15BMl5BanBnXkFtZTgwNTY2NDIwNjE@._V1__SX1053_SY719_.jpg</string>
 		<key>rating</key>
@@ -80,7 +80,7 @@
 		<key>movieTitle</key>
 		<string>Minions</string>
 		<key>tagline</key>
-		<string>No tagline has been added.</string>
+		<string>-</string>
 		<key>posterPath</key>
 		<string>MV5BMTg2MTMyMzU0M15BMl5BanBnXkFtZTgwOTU3ODk4NTE@._V1__SX1053_SY719_.jpg</string>
 		<key>rating</key>
@@ -98,7 +98,7 @@
 		<key>movieTitle</key>
 		<string>PAWN SACRIFICE</string>
 		<key>tagline</key>
-		<string>No tagline has been added.</string>
+		<string>-</string>
 		<key>posterPath</key>
 		<string>MV5BMTk0MDYxNTE0OV5BMl5BanBnXkFtZTgwODgyNjU3NTE@._V1__SX1053_SY719_.jpg</string>
 		<key>rating</key>
