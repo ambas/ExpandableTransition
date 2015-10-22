@@ -52,15 +52,15 @@ extension MovieDetail: DestinationViewControllerProtocol {
             cell.posterImageView.image = UIImage(named: posterPath)
         }
         cell.tagline.text = movie?.tagline
-        println("will transition")
+        print("will transition")
     }
     
     func snapShotTransitioning(snapShot: UIView) {
-        println("transitioning")
+        print("transitioning")
     }
     
     func snapShotDidTransition(snapShot: UIView) {
-        println("did transition")
+        print("did transition")
         UIView.animateWithDuration(0.3, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
             self.tableView.contentInset.top = 230
         }, completion: nil)
@@ -84,15 +84,15 @@ extension MovieDetail: DestinationViewControllerProtocol {
             newRect.origin.y = 610
             ss.frame = newRect
             }, completion: nil)
-        println("will folding")
+        print("will folding")
 
     }
     
     func snapShotFoldind(snap Shot: UIView) {
-        println("folding")
+        print("folding")
     }
     
     func snapShotDidFold(snapShot: UIView) {
-        println("did fold")
+        print("did fold")
     }
 }

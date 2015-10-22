@@ -15,8 +15,8 @@
 		A40814701B8635AF00E89A18 /* MV5BMjM2NTQ5Mzc2M15BMl5BanBnXkFtZTgwNTcxMDI2NTE@._V1__SX1053_SY719_.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A408146F1B8635AF00E89A18 /* MV5BMjM2NTQ5Mzc2M15BMl5BanBnXkFtZTgwNTcxMDI2NTE@._V1__SX1053_SY719_.jpg */; };
 		A40814731B8635DD00E89A18 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40814721B8635DD00E89A18 /* Movie.swift */; };
 		A40814751B863D1600E89A18 /* MovieDB.plist in Resources */ = {isa = PBXBuildFile; fileRef = A40814741B863D1600E89A18 /* MovieDB.plist */; };
-		A4CBE2821B95DAE7003D9249 /* ExpandableViewTransition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CBE2811B95DAE7003D9249 /* ExpandableViewTransition.framework */; };
-		A4CBE2831B95DAE7003D9249 /* ExpandableViewTransition.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A4CBE2811B95DAE7003D9249 /* ExpandableViewTransition.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A416A0CA1BD8FDCC0069D11F /* ExpandableViewTransition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A416A0C81BD8FDC40069D11F /* ExpandableViewTransition.framework */; };
+		A416A0CB1BD8FDCC0069D11F /* ExpandableViewTransition.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A416A0C81BD8FDC40069D11F /* ExpandableViewTransition.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A4CEB0121B8777B6000DCFA0 /* PlistReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CEB0111B8777B6000DCFA0 /* PlistReader.swift */; };
 		F5217F531A89F25500A3D0ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5217F521A89F25500A3D0ED /* AppDelegate.swift */; };
 		F5217F551A89F25500A3D0ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5217F541A89F25500A3D0ED /* ViewController.swift */; };
@@ -46,7 +46,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A4CBE2831B95DAE7003D9249 /* ExpandableViewTransition.framework in Embed Frameworks */,
+				A416A0CB1BD8FDCC0069D11F /* ExpandableViewTransition.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,7 +62,7 @@
 		A408146F1B8635AF00E89A18 /* MV5BMjM2NTQ5Mzc2M15BMl5BanBnXkFtZTgwNTcxMDI2NTE@._V1__SX1053_SY719_.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "MV5BMjM2NTQ5Mzc2M15BMl5BanBnXkFtZTgwNTcxMDI2NTE@._V1__SX1053_SY719_.jpg"; sourceTree = "<group>"; };
 		A40814721B8635DD00E89A18 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		A40814741B863D1600E89A18 /* MovieDB.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MovieDB.plist; sourceTree = "<group>"; };
-		A4CBE2811B95DAE7003D9249 /* ExpandableViewTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = ExpandableViewTransition.framework; path = "/Users/Ambas/Library/Developer/Xcode/DerivedData/ExpanableViewTransition-dnjncvyhkgvtesdayeiqqubzvyht/Build/Products/Debug-iphoneos/ExpandableViewTransition.framework"; sourceTree = "<absolute>"; };
+		A416A0C81BD8FDC40069D11F /* ExpandableViewTransition.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ExpandableViewTransition.framework; sourceTree = "<group>"; };
 		A4CEB0111B8777B6000DCFA0 /* PlistReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlistReader.swift; sourceTree = "<group>"; };
 		F5217F4D1A89F25500A3D0ED /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5217F511A89F25500A3D0ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4CBE2821B95DAE7003D9249 /* ExpandableViewTransition.framework in Frameworks */,
+				A416A0CA1BD8FDCC0069D11F /* ExpandableViewTransition.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,7 +123,6 @@
 		F5217F441A89F25500A3D0ED = {
 			isa = PBXGroup;
 			children = (
-				A4CBE2811B95DAE7003D9249 /* ExpandableViewTransition.framework */,
 				F5217F4F1A89F25500A3D0ED /* Demo */,
 				F5217F651A89F25500A3D0ED /* DemoTests */,
 				F5217F4E1A89F25500A3D0ED /* Products */,
@@ -142,6 +141,7 @@
 		F5217F4F1A89F25500A3D0ED /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				A416A0C81BD8FDC40069D11F /* ExpandableViewTransition.framework */,
 				A40814711B8635CB00E89A18 /* Models */,
 				A408145E1B86333E00E89A18 /* Resources */,
 				F5217F521A89F25500A3D0ED /* AppDelegate.swift */,
@@ -426,6 +426,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/ExpanableViewTransition-dnjncvyhkgvtesdayeiqqubzvyht/Build/Products/Debug-iphoneos",
+					"$(PROJECT_DIR)/Demo",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Demo/Info.plist;
@@ -444,6 +445,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/ExpanableViewTransition-dnjncvyhkgvtesdayeiqqubzvyht/Build/Products/Debug-iphoneos",
+					"$(PROJECT_DIR)/Demo",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Demo/Info.plist;

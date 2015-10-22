@@ -43,8 +43,8 @@ class ViewController: UICollectionViewController {
     }
     
 }
-
-extension ViewController: UICollectionViewDelegate {
+// conform collectionViewDelegate.
+extension ViewController {
     
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return dataSource.count

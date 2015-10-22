@@ -27,7 +27,7 @@ public class Transition: NSObject, UIViewControllerAnimatedTransitioning {
         self.isHideExpandedView = isHideExpandedView
     }
     
-    public func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
+    public func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
         return animationDuration
     }
     
@@ -36,11 +36,11 @@ public class Transition: NSObject, UIViewControllerAnimatedTransitioning {
         let toViewController = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey) as UIViewController!
         let containerView = transitionContext.containerView()
         if !self.isPresenting {
-            expandCard(fromViewController, toViewController: toViewController, containerView: containerView, completion: {
+            expandCard(fromViewController, toViewController: toViewController, containerView: containerView!, completion: {
                 transitionContext.completeTransition(true)
             })
         } else {
-            hideCard(fromViewController, toViewController: toViewController, containerView: containerView, completion: {
+            hideCard(fromViewController, toViewController: toViewController, containerView: containerView!, completion: {
                 transitionContext.completeTransition(true)
             })
         }
