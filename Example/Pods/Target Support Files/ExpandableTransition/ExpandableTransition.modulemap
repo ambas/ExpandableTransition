@@ -1,0 +1,6 @@
+framework module ExpandableTransition {
+  umbrella header "ExpandableTransition-umbrella.h"
+
+  export *
+  module * { export * }
+}

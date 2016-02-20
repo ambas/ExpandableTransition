@@ -1,0 +1,25 @@
+{
+  "name": "ExpandableTransition",
+  "version": "0.1.0",
+  "summary": "A short description of ExpandableTransition.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/ExpandableTransition",
+  "license": "MIT",
+  "authors": {
+    "Ambas Chobsanti": "ambaschobsanti@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/ExpandableTransition.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "ExpandableTransition": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

@@ -5,7 +5,31 @@
 [![License](https://img.shields.io/cocoapods/l/ExpandableTransition.svg?style=flat)](http://cocoapods.org/pods/ExpandableTransition)
 [![Platform](https://img.shields.io/cocoapods/p/ExpandableTransition.svg?style=flat)](http://cocoapods.org/pods/ExpandableTransition)
 
-## Usage
+## To Do
+
+- [x] Push from collection view to view controller like cell expanded
+- [x] Provide delegate for each transition state
+- [x] Show or hide expanded view
+- [x] Install with Carthage.
+- [ ] Install with Cocoapods
+- [ ] Custom transition
+
+
+##Installation
+### Carthage
+```ogdl
+github "ambas/ExpandableTransition"
+```
+
+##Usage
+1. import ExpandableViewTransition
+2. In UICollectionViewController set self.navigationviewControllerDelegate to
+``` Objective-C
+let delegateHolder = CENavigationControllerDelegate(isHideExpandedView: false)
+self.navigationController?.delegate = delegateHolder
+````
+3. Implement `CEBaseViewControllerProtocol` in your UICollectionViewController
+4. If you want to do something when transitioning at destination view controller just implement `CEDestinationViewControllerProtocol` in your destination view controller
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 

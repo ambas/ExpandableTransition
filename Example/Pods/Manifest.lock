@@ -1,0 +1,14 @@
+PODS:
+  - ExpandableTransition (0.1.0)
+
+DEPENDENCIES:
+  - ExpandableTransition (from `../`)
+
+EXTERNAL SOURCES:
+  ExpandableTransition:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ExpandableTransition: 052c5bf900c0779921674c329591f7f049779c16
+
+COCOAPODS: 0.39.0
