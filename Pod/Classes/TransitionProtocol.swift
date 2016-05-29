@@ -8,29 +8,29 @@
 
 import UIKit
 
-@objc public protocol BaseViewControllerProtocol {
+public protocol BaseViewControllerProtocol {
     
      func transitionCollectionView() -> UICollectionView
     
      func viewToExpand() -> SnapShotViewProtocol
 }
 
-@objc public protocol DestinationViewControllerProtocol {
+public protocol DestinationViewControllerProtocol {
     
-    optional func snapShotWillTransition(snapShot: UIView)
+    func snapShotWillTransition(snapShot: UIView)
     
-    optional func snapShotTransitioning(snapShot: UIView)
+    func snapShotTransitioning(snapShot: UIView)
     
-    optional func snapShotDidTransition(snapShot: UIView)
+    func snapShotDidTransition(snapShot: UIView)
 
-    optional func snapShotWillFold(snapShot: UIView)
+    func snapShotWillFold(snapShot: UIView)
     
-    optional func snapShotFoldind(snapShot: UIView)
+    func snapShotFoldind(snapShot: UIView)
     
-    optional func snapShotDidFold(snapShot: UIView)
+    func snapShotDidFold(snapShot: UIView)
 }
 
-@objc public protocol SnapShotViewProtocol {
+public protocol SnapShotViewProtocol {
     
     func snapShotForTransition() -> UIView
 }

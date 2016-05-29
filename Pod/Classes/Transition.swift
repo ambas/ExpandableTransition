@@ -55,7 +55,7 @@ public class Transition: NSObject, UIViewControllerAnimatedTransitioning {
         let leftUpperPoint = (viewToExpand as! UIView).convertPoint(CGPointZero, toView: nil)
         snapShot.origin(leftUpperPoint)
         
-        (toViewController as? DestinationViewControllerProtocol)?.snapShotWillTransition?(snapShot)
+        (toViewController as? DestinationViewControllerProtocol)?.snapShotWillTransition(snapShot)
         
         UIView.expandAnimation(leftUpperPoint, snapShot: snapShot, fromViewController: fromViewController, toViewController: toViewController, completion: {
             if self.isHideExpandedView {
@@ -76,7 +76,7 @@ public class Transition: NSObject, UIViewControllerAnimatedTransitioning {
         snapShot.origin(CGPoint(x: 0, y: offsetY))
         snapShot.frame.size.height = screenHeight
         containerView.addSubview(snapShot)
-        (fromViewController as? DestinationViewControllerProtocol)?.snapShotWillFold?(snapShot)
+        (fromViewController as? DestinationViewControllerProtocol)?.snapShotWillFold(snapShot)
         
         UIView.foldAnimation(leftUpperPoint, snapShot: snapShot, fromViewController: fromViewController, viewToExpand: viewToExpand, completion: {
             completion()

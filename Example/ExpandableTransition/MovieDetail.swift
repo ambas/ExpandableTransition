@@ -89,7 +89,7 @@ extension MovieDetail: DestinationViewControllerProtocol {
 
     }
     
-    func snapShotFoldind(snap Shot: UIView) {
+    func snapShotFoldind(Shot: UIView) {
         print("folding")
     }
     
